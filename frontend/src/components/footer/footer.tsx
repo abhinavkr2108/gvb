@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 // components/Footer.tsx
 export default function Footer() {
   const footerItems = [
@@ -14,9 +16,9 @@ export default function Footer() {
         </div>
         <div className="flex justify-center md:justify-end space-x-3 pt-4 md:pt-0">
           {footerItems.map((item, index) => (
-            <a key={index} href={item.href} className="hover:underline">
+            <Link key={index} to={item.href} className="hover:underline">
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </footer>
