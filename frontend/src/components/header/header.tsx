@@ -59,7 +59,7 @@ export default function Header({
     url: "/",
     src: "/logo.png",
     alt: "logo",
-    title: "gvibrationbusters",
+    title: "GVibrationBusters",
   },
   menu = [
     { title: "Home", url: "/" },
