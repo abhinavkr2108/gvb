@@ -44,6 +44,13 @@ export default function HeroSection() {
             </Button>
           </Link>
         </div>
+        {/* <div className="mt-12 mx-auto lg:w-4/5">
+          <img
+            className="rounded-t-2xl mx-auto object-cover"
+            src="/dashboard.png"
+            alt="CalendarPlan dashboard"
+          />
+        </div> */}
       </section>
     </div>
   );
