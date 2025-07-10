@@ -27,14 +27,16 @@ export default function HeroSection() {
             G Vibrations Busters
           </span>
         </h1>
-        <p className="text-iso-gray text-lg md:text-xl mt-4 w-4/5 mx-auto">
+
+        <p className="text-iso-gray text-lg md:text-xl mt-4 w-4/5 mx-auto text-justify">
           A leading company in the field of machine monitoring and protection
           systems. We are an authorized channel partner for Metrix Vibrations
           Intruments USA. We offer unmatched expertise in the field of condition
-          monitoring (Vibration Sensors, Tranmitters, Meters, Monitoring Systems
-          and Mechanical Vibration Switches). Get in touch for proven, reliable
-          and quality products with right solutions.
+          monitoring (Vibration Sensors, Transmitters, Meters, Monitoring
+          Systems, and Mechanical Vibration Switches). Get in touch for proven,
+          reliable, and quality products with the right solutions.
         </p>
+
         <div className="flex justify-center pt-7 mt-4">
           <Link to="/about">
             <Button className="w-fit md:w-40 lg:w-48 font-bold text-md cursor-pointer">

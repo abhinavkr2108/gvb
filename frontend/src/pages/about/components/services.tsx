@@ -60,11 +60,9 @@ export default function Services() {
                 />
               </svg>
             </div>
-            <h6 className="mb-2 font-semibold leading-5">
-              Repairment & Calibration
-            </h6>
+            <h6 className="mb-2 font-semibold leading-5">Repair Services</h6>
             <p className="mb-3 text-sm text-gray-900">
-              We provide repairment and precise calibration services for a wide
+              We provide repair and precise calibration services for a wide
               range of plant instruments.
             </p>
           </div>
