@@ -22,7 +22,7 @@ export default function HeroSection() {
 
       <section className="text-center px-4 md:px-6 max-w-5xl mx-auto pt-12">
         <h1 className="font-bold leading-[40px] md:leading-[70px] text-3xl md:text-6xl lg:text-6xl text-iso-gray-dark tracking-[-1.4px]">
-          Elevate Your Machine Monitoring with <br />{" "}
+          Elevate Your Machine Monitoring with{" "}
           <span className="bg-gradient-to-r from-[#7A76FC] to-[#61A4EB] text-transparent bg-clip-text">
             G Vibrations Busters
           </span>
@@ -39,17 +39,10 @@ export default function HeroSection() {
 
         <div className="flex justify-center pt-7 mt-4">
           <Link to="/about">
-            <Button className="w-fit md:w-40 lg:w-48 font-bold text-md cursor-pointer">
+            <Button className="w-fit md:w-40 lg:w-48 font-bold text-md cursor-pointer mb-8">
               About Us
             </Button>
           </Link>
-        </div>
-        <div className="mt-12 mx-auto lg:w-4/5">
-          <img
-            className="rounded-t-2xl mx-auto object-cover"
-            src="/dashboard.png"
-            alt="CalendarPlan dashboard"
-          />
         </div>
       </section>
     </div>
