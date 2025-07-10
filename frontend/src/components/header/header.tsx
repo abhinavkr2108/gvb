@@ -112,10 +112,6 @@ export default function Header({
       title: "Contact",
       url: "/contact",
     },
-    {
-      title: "Blog",
-      url: "/blog",
-    },
   ],
 }: Navbar1Props) {
   const [top, setTop] = useState(true);
