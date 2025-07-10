@@ -1,4 +1,5 @@
 // components/HeroSection.tsx
+import { Link } from "react-router";
 import { Button } from "../../../components/ui/button";
 
 export default function HeroSection() {
@@ -20,22 +21,26 @@ export default function HeroSection() {
       </svg>
 
       <section className="text-center px-4 md:px-6 max-w-5xl mx-auto pt-12">
-        <h1 className="font-bold leading-[40px] md:leading-[70px] text-4xl md:text-6xl lg:text-6xl text-iso-gray-dark tracking-[-1.4px]">
-          Elevate Your Monitoring with <br />{" "}
+        <h1 className="font-bold leading-[40px] md:leading-[70px] text-3xl md:text-6xl lg:text-6xl text-iso-gray-dark tracking-[-1.4px]">
+          Elevate Your Machine Monitoring with <br />{" "}
           <span className="bg-gradient-to-r from-[#7A76FC] to-[#61A4EB] text-transparent bg-clip-text">
             G Vibrations Busters
           </span>
         </h1>
         <p className="text-iso-gray text-lg md:text-xl mt-4 w-4/5 mx-auto">
-          Partnering with Metrix Vibration, leaders in industrial vibration and
-          condition monitoring systems, we offer unmatched expertise in
-          condition monitoring. Get in touch to find the perfect monitoring
-          solution for your equipment.
+          A leading company in the field of machine monitoring and protection
+          systems. We are an authorized channel partner for Metrix Vibrations
+          Intruments USA. We offer unmatched expertise in the field of condition
+          monitoring (Vibration Sensors, Tranmitters, Meters, Monitoring Systems
+          and Mechanical Vibration Switches). Get in touch for proven, reliable
+          and quality products with right solutions.
         </p>
         <div className="flex justify-center pt-7 mt-4">
-          <Button className="w-fit md:w-40 lg:w-48 font-bold text-md cursor-pointer">
-            About Us
-          </Button>
+          <Link to="/about">
+            <Button className="w-fit md:w-40 lg:w-48 font-bold text-md cursor-pointer">
+              About Us
+            </Button>
+          </Link>
         </div>
         <div className="mt-12 mx-auto lg:w-4/5">
           <img

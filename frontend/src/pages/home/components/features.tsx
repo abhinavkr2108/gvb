@@ -1,5 +1,7 @@
 // components/Content.tsx
 
+import { Link } from "react-router";
+
 export default function FeaturesSection() {
   const ourFeatures = [
     {
@@ -98,21 +100,30 @@ export default function FeaturesSection() {
         </div>
 
         <div className="grid grid-cols-2 gap-5">
-          <img
-            className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-            src="/metrix.png"
-            alt="Instrument monitoring"
-          />
-          <img
-            className="object-cover w-full h-48 rounded shadow-lg"
-            src="/factory.jpg"
-            alt="Technician at work"
-          />
-          <img
-            className="object-cover w-full h-48 rounded shadow-lg"
-            src="/warehouse.jpg"
-            alt="Control panel"
-          />
+          <Link
+            to={"https://www.metrixvibration.com/"}
+            className="object-cover w-full h-56 col-span-2 rounded shadow-lg cursor-pointer"
+          >
+            <img
+              className="object-cover w-full h-56 col-span-2 rounded shadow-lg cursor-pointer"
+              src="/metrix.png"
+              alt="Instrument monitoring"
+            />
+          </Link>
+          <div>
+            <img
+              className="object-cover w-full h-48 rounded shadow-lg"
+              src="/factory.jpg"
+              alt="Technician at work"
+            />
+          </div>
+          <div>
+            <img
+              className="object-cover w-full h-48 rounded shadow-lg"
+              src="/warehouse.jpg"
+              alt="Control panel"
+            />
+          </div>
         </div>
       </div>
     </div>
