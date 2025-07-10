@@ -1,72 +1,115 @@
-// components/FeaturesSection.tsx
-import { CheckCircle } from "lucide-react";
+// components/Content.tsx
 
 export default function FeaturesSection() {
+  const ourFeatures = [
+    {
+      title: "Attention to Detail",
+      description:
+        "We carefully plan and execute every step of our service, ensuring nothing is overlooked. Our team pays close attention to even the smallest components of your equipment.",
+    },
+    {
+      title: "Pricing",
+      description:
+        "We offer transparent and competitive pricing tailored to your needs. Every estimate is carefully prepared to reflect the quality of our service without overcharging.",
+    },
+    {
+      title: "Support",
+      description:
+        "Our expert technical team is always available to support you throughout your equipment's lifecycle. From initial installation to routine maintenance.",
+    },
+  ];
+
   return (
-    <section className="bg-white">
-      <div className="w-[85%] md:w-4/5 mx-auto text-center pt-16">
-        <span className="uppercase text-[#6A65FF] text-sm md:text-base font-medium tracking-widest badgeGradientText">
-          Features
-        </span>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl mt-2 font-bold text-iso-gray-dark">
-          Explore Our Amazing <br />
-          <span className="bg-gradient-to-r from-[#7A76FC] to-[#61A4EB] text-transparent bg-clip-text">
-            Features
-          </span>
-        </h1>
-        <p className="text-iso-gray-light text-lg md:text-xl pt-4 font-normal">
-          Powerful product and growth analytics to help you convert, engage, and
-          retain more users.
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div>
+          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-200">
+            Why Choose Us?
+          </p>
+        </div>
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <span className="relative inline-block">
+            <svg
+              viewBox="0 0 52 24"
+              fill="currentColor"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+            >
+              <defs>
+                <pattern
+                  id="pattern-circles"
+                  x="0"
+                  y="0"
+                  width=".135"
+                  height=".30"
+                >
+                  <circle cx="1" cy="1" r=".7" />
+                </pattern>
+              </defs>
+              <rect fill="url(#pattern-circles)" width="52" height="24" />
+            </svg>
+            <span className="relative">Elevating</span>
+          </span>{" "}
+          Your Technical Experience
+        </h2>
+        <p className="text-base text-gray-700 md:text-lg">
+          We deliver superior technical support while maintaining
+          industry-leading customer satisfaction, ensuring your operations run
+          smoothly.
         </p>
       </div>
 
-      <div className="pt-12 md:pt-24 mx-auto w-4/5 lg:grid lg:grid-cols-2 gap-8">
-        <div>
-          <i className="bi bi-file-text text-[#447799] text-3xl"></i>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-iso-gray-dark mt-4 mb-4">
-            Create tasks and notes with ease
-          </h2>
-          <p className="text-lg text-iso-gray w-4/5">
-            With our calendar app, you can quickly create notes and tasks to
-            help you plan and organize your tasks and projects.
-          </p>
-          <ul className="mt-6 space-y-4 text-lg text-iso-gray">
-            {[...Array(3)].map((_, i) => (
-              <li key={i} className="flex items-center space-x-2">
-                <CheckCircle className="text-emerald-600" size={24} />
-                <span>Quickly create notes and tasks to help you plan</span>
-              </li>
-            ))}
-          </ul>
+      <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+        <div className="flex flex-col justify-center space-y-6">
+          {ourFeatures.map((feature, index) => (
+            <div key={index} className="flex">
+              <div className="mr-4">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-50">
+                  <svg
+                    className="w-6 h-6 text-indigo-500"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h6 className="mb-2 font-semibold leading-5">
+                  {feature.title}
+                </h6>
+                <p className="text-sm text-gray-900">{feature.description}</p>
+                {index !== ourFeatures.length - 1 && (
+                  <hr className="w-full my-6 border-gray-300" />
+                )}
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="mt-8">
-          <img
-            className="rounded-3xl object-cover w-full"
-            src="https://res.cloudinary.com/dnzjbmzag/image/upload/v1694679402/UI1.png"
-            alt="UI Features"
-          />
-        </div>
-      </div>
 
-      <div className="pt-24 mx-auto w-4/5 lg:grid lg:grid-cols-2 gap-8">
-        <div className="mt-8">
+        <div className="grid grid-cols-2 gap-5">
           <img
-            className="rounded-3xl object-cover w-full"
-            src="https://res.cloudinary.com/dnzjbmzag/image/upload/v1694679395/Frame.png"
-            alt="Workflow Integration"
+            className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
+            src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Instrument monitoring"
+          />
+          <img
+            className="object-cover w-full h-48 rounded shadow-lg"
+            src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Technician at work"
+          />
+          <img
+            className="object-cover w-full h-48 rounded shadow-lg"
+            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Control panel"
           />
         </div>
-        <div className="pt-10 lg:mt-36">
-          <i className="bi bi-grid text-[#447799] text-3xl"></i>
-          <h2 className="text-4xl lg:text-5xl font-semibold text-iso-gray-dark mt-4 mb-4">
-            Streamline your workflow
-          </h2>
-          <p className="text-lg text-iso-gray">
-            We also have lots of integrations with popular apps, so that you can
-            organize and streamline your workflow.
-          </p>
-        </div>
       </div>
-    </section>
+    </div>
   );
 }
