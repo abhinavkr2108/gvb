@@ -20,9 +20,9 @@ export default function FeaturesSection() {
         "Our expert technical team is always available to support you throughout your equipment's lifecycle.",
     },
     {
-      title: "Best Service",
+      title: "Best Services",
       description:
-        "We are committed to consistently exceeding client expectations by delivering reliable and high-quality service.",
+        "We are committed to consistently exceeding client expectations by delivering reliable and high-quality services.",
     },
   ];
 
