@@ -5,17 +5,22 @@ export default function FeaturesSection() {
     {
       title: "Attention to Detail",
       description:
-        "We carefully plan and execute every step of our service, ensuring nothing is overlooked. Our team pays close attention to even the smallest components of your equipment.",
+        "We carefully plan and execute every step of our service, ensuring nothing is overlooked.",
     },
     {
       title: "Pricing",
       description:
-        "We offer transparent and competitive pricing tailored to your needs. Every estimate is carefully prepared to reflect the quality of our service without overcharging.",
+        "We offer transparent and competitive pricing tailored to your needs, and every estimate is carefully prepared.",
     },
     {
       title: "Support",
       description:
-        "Our expert technical team is always available to support you throughout your equipment's lifecycle. From initial installation to routine maintenance.",
+        "Our expert technical team is always available to support you throughout your equipment's lifecycle.",
+    },
+    {
+      title: "Best Service",
+      description:
+        "We are committed to consistently exceeding client expectations by delivering reliable and high-quality service.",
     },
   ];
 
@@ -85,7 +90,7 @@ export default function FeaturesSection() {
                 </h6>
                 <p className="text-sm text-gray-900">{feature.description}</p>
                 {index !== ourFeatures.length - 1 && (
-                  <hr className="w-full my-6 border-gray-300" />
+                  <hr className="w-full my-1 border-gray-300" />
                 )}
               </div>
             </div>
@@ -95,17 +100,17 @@ export default function FeaturesSection() {
         <div className="grid grid-cols-2 gap-5">
           <img
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="/metrix.png"
             alt="Instrument monitoring"
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="/factory.jpg"
             alt="Technician at work"
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="/warehouse.jpg"
             alt="Control panel"
           />
         </div>
