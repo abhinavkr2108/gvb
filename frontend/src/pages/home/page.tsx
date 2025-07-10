@@ -1,10 +1,11 @@
-import { Button } from "../../components/ui/button";
+import FeaturesSection from "./components/features";
+import HeroSection from "./components/hero";
 
 export default function HomePage() {
   return (
-    <div className="font-bold text-green-500">
-      Home page
-      <Button>Click me</Button>
+    <div>
+      <HeroSection />
+      <FeaturesSection />
     </div>
   );
 }
